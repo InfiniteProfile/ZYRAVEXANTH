@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05030a">
+<meta name="description" content="One universe. Infinite identities. Limitless possibilities.">
+<title>ZYRAVEXANTH — Infinite Profile System</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305030a'/%3E%3Cpath d='M8 9h16L8 23h16' stroke='%23b0102a' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>ZYRAVEXANTH</h1>
+    <p>One universe. Infinite identities. Limitless possibilities.</p>
+  </div>
+  <form id="search" class="search" autocomplete="off" novalidate>
+    <input id="q" type="text" inputmode="numeric" maxlength="4000" placeholder="Find profile by ID" aria-label="Find a profile by its numerical ID" spellcheck="false" autocapitalize="off" autocorrect="off">
+    <button type="submit">Open</button>
+    <span id="msg" class="msg" role="status"></span>
+  </form>
+</header>
+
+<main id="feed" aria-label="Profiles"></main>
+
+<div id="view" class="view" hidden role="dialog" aria-modal="true" aria-label="Profile">
+  <div class="sheet">
+    <button id="close" class="close" type="button" aria-label="Close profile">&times;</button>
+    <div id="detail"></div>
+  </div>
+</div>
+
+<noscript><p style="padding:2rem;color:#ece8f1">ZYRAVEXANTH needs JavaScript to generate its profiles.</p></noscript>
+<script src="script.js" defer></script>
+</body>
+</html>
